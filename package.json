@@ -5,8 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "serve": "cross-env NODE_ENV=development env_config=dev webpack-dev-server --colors --inline --progress",
-    "build": "webpack"
+    "serve": "cross-env NODE_ENV=development env_config=dev webpack-dev-server --colors --inline --progress --open",
+    "build": "cross-env NODE_ENV=production webpack --progress --hide-modules"
   },
   "keywords": [],
   "author": "",
