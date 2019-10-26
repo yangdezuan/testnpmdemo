@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
+    "serve": "cross-env NODE_ENV=development env_config=dev webpack-dev-server --colors --inline --progress",
     "build": "webpack"
   },
   "keywords": [],
@@ -14,6 +15,8 @@
     "hellodz": "^1.0.0"
   },
   "devDependencies": {
-    "webpack": "^4.41.2"
+    "cross-env": "^6.0.3",
+    "webpack": "^4.41.2",
+    "webpack-dev-server": "^3.9.0"
   }
 }
